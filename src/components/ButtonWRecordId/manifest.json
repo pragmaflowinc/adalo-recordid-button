@@ -1,0 +1,50 @@
+{
+  "displayName": "Button w Record Id",
+  "defaultWidth": 160,
+  "defaultHeight": 24,
+  "resizeX": true,
+  "resizeY": true,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+    {
+      "name": "list",
+      "displayName": "Where does the record come from (filter to a single value)",
+      "type": "list"
+    },
+    {
+      "name": "title",
+      "displayName": "Label for the button",
+      "type": "text",
+      "default": "Button",
+      "styles": {
+        "fontFamily": "@body",
+        "color": "@text",
+        "fontWeight": "normal"
+      }
+    },
+    {
+      "name": "icon",
+      "displayName": "Icon",
+      "type": "icon",
+      "default": "add"
+    },
+    {
+      "name": "backgroundColor",
+      "displayName": "Background Color",
+      "type": "color",
+      "default": "@primary"
+    },
+    {
+      "name": "onButtonClick",
+      "displayName": "Triggered when the button is clicked",
+      "type": "action",
+      "arguments": [
+        {
+          "displayName": "Record Id",
+          "type": "number"
+        }
+      ]
+    }
+  ]
+}
